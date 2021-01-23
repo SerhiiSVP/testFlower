@@ -13,7 +13,10 @@ a:hover{text-decoration: none;}
 
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-
+h1,h2,h3,h4,h5,h6,p,img,div{
+	margin: 0;
+	padding: 0;
+}
 
 html{
 	scroll-behavior: smooth;
@@ -169,6 +172,45 @@ h1{
 	padding: 150px 0;
 }
 
+/* Maps */
+
+.maps__info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 0;
+}
+.info__left{
+	width: 40%;
+}
+.left__title{
+	margin-bottom: 50px;	
+}
+.info__left h2{
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 43px;
+	color: #353434;
+	margin-bottom: 15px;
+}
+
+.info__left p{
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+
+	color: #2E2D2D;
+	
+}
+.info__left div{
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 52px;
+	color: #353434;
+	
+}
+
+
 
 
 /* Footer */
@@ -236,6 +278,14 @@ h1{
 	.navbar-collapse{
 		margin-left: 0;
 	}
+	.maps__info{
+		flex-direction: column;
+	}
+	.info__left{
+		width: auto;
+		text-align: center;
+	}
+
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
@@ -290,6 +340,9 @@ h1{
 	}
 	.footer p{
 		margin-top: 40px;
+	}
+	.info__left div{
+		font-size: 30px;
 	}
 }
 
