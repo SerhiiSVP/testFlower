@@ -344,6 +344,10 @@ h1{
 	.info__left div{
 		font-size: 30px;
 	}
+	iframe{
+		width: 320px;
+		height: 450px;
+	}
 }
 
 
